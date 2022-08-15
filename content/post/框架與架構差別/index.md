@@ -22,7 +22,7 @@ tags:
 
 ---
 
-![Untitled](Untitled%201.png)
+![Untitled](Untitled2.png)
 
 **在一個既定的框架下可以做的工作**，也就是說，**這是一個已經成形的方法，而且有程式碼實體**
 （例如鋼構工法也是要有鋼材才能做）**，並且會告訴你要如何使用它**（即 Framework Documentation，MSDN Library 即為一最佳例子）
