@@ -8,7 +8,6 @@ categories:
 tags:
     - Terminal
     - Oh My Zsh
-	- Powershell
 ---
 
 
