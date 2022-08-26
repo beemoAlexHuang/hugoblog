@@ -1,6 +1,6 @@
 ---
 title: "框架與架構差別"
-description: "文章简介"
+description: "軟體架構（Software Architecture）是一種軟體的藍圖，它告訴你這個軟體的結構"
 date: "2022-08-14 01:00:00+0200"
 image: "cover.jpg"
 categories:
