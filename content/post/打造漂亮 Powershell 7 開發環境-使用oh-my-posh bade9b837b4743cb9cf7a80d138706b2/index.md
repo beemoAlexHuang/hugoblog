@@ -6,7 +6,7 @@ image: "cover.jpg"
 categories:
     - Terminal
 tags:
-    - oh-my-posh
+    - oh my posh
 	- terminal
 	- PowerShell 7 
 ---
