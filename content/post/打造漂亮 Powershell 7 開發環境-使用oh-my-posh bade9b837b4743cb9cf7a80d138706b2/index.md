@@ -1,14 +1,14 @@
 ---
-title: "打造漂亮 Powershell 7 開發環境-使用oh-my-posh"
+title: "打造漂亮 Powershell 7 開發環境_使用oh-my-posh"
 description: "以前還在前公司Infra職時，習慣用Oh My Zsh美化自己的 terminal"
 date: "2022-08-25 01:00:00+0200"
 image: "cover.jpg"
 categories:
     - Terminal
 tags:
-    - oh my posh
-	- terminal
-	- PowerShell 7 
+    - Terminal
+    - Oh My Zsh
+	- Powershell
 ---
 
 
