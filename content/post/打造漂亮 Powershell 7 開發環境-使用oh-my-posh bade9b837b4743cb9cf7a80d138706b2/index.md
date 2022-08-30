@@ -76,8 +76,6 @@ oh-my-posh init pwsh | Invoke-Expression
 
 ![當看到前面這樣時別慌張，缺個字體而已](1.png)
 
-當看到前面這樣時別慌張，缺個字體而已
-
 oh-my-posh輸入
 
 ```powershell
