@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Terminal on 隨堂測驗紙</title><link>https://www.beemoalex.net/categories/terminal/</link><description>Recent content in Terminal on 隨堂測驗紙</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Thu, 25 Aug 2022 01:00:00 +0200</lastBuildDate><atom:link href="https://www.beemoalex.net/categories/terminal/index.xml" rel="self" type="application/rss+xml"/><item><title>打造漂亮 Powershell 7 開發環境_使用oh-my-posh</title><link>https://www.beemoalex.net/p/%E6%89%93%E9%80%A0%E6%BC%82%E4%BA%AE-powershell-7-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83_%E4%BD%BF%E7%94%A8oh-my-posh/</link><pubDate>Thu, 25 Aug 2022 01:00:00 +0200</pubDate><guid>https://www.beemoalex.net/p/%E6%89%93%E9%80%A0%E6%BC%82%E4%BA%AE-powershell-7-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83_%E4%BD%BF%E7%94%A8oh-my-posh/</guid><description>&lt;img src="https://www.beemoalex.net/p/%E6%89%93%E9%80%A0%E6%BC%82%E4%BA%AE-powershell-7-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83_%E4%BD%BF%E7%94%A8oh-my-posh/cover.jpg" alt="Featured image of post 打造漂亮 Powershell 7 開發環境_使用oh-my-posh" />&lt;h1 id="前言">前言&lt;/h1>
+&lt;hr>
+&lt;p>以前還在前公司&lt;strong>&lt;strong>Infra&lt;/strong>&lt;/strong>職時，習慣用&lt;a class="link" href="https://ohmyz.sh/" target="_blank" rel="noopener"
+>Oh My Zsh&lt;/a> 美化自己的 terminal。&lt;/p>
+&lt;p>在這間公司時又懷念起 Linux體系的 &lt;a class="link" href="https://ohmyz.sh/" target="_blank" rel="noopener"
+>Oh My Zsh&lt;/a> terminal那樣的介面，於是又動手把它裝起來，git提示跟字體真的讓自己下語法會好蠻多的。&lt;/p>
+&lt;p>這陣子又有新環境要安裝，卻沒找到之前的步驟，這次還是乖乖地寫下來。&lt;/p>
+&lt;h1 id="環境建置">環境建置&lt;/h1>
+&lt;hr>
+&lt;p>1.使用PowerShell，先安裝&lt;a class="link" href="https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=zh-tw&amp;amp;gl=TW" target="_blank" rel="noopener"
+>Windows Terminal&lt;/a> 新版本
+(可以去Store安裝也可，Win10都用winget了下個指令也行 )&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-powershell" data-lang="powershell">&lt;span class="line">&lt;span class="cl">&lt;span class="n">winget&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">Microsoft&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">WindowsTerminal&lt;/span> &lt;span class="n">-e&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>2.升級PowerShell 7&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-powershell" data-lang="powershell">&lt;span class="line">&lt;span class="cl">&lt;span class="n">winget&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">Microsoft&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">PowerShell&lt;/span> &lt;span class="n">-e&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>改一下預設開啟&lt;a class="link" href="https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=zh-tw&amp;amp;gl=TW" target="_blank" rel="noopener"
+>Windows Terminal&lt;/a> 時為 PowerShell 7，改完後重開一下切成PowerShell 7&lt;/p>
+&lt;p>&lt;img src="https://www.beemoalex.net/p/%E6%89%93%E9%80%A0%E6%BC%82%E4%BA%AE-powershell-7-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83_%E4%BD%BF%E7%94%A8oh-my-posh/5.png"
+width="1106"
+height="616"
+srcset="https://www.beemoalex.net/p/%E6%89%93%E9%80%A0%E6%BC%82%E4%BA%AE-powershell-7-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83_%E4%BD%BF%E7%94%A8oh-my-posh/5_hufa7665bd0a8f25ea478ba4ba32843072_56241_480x0_resize_box_3.png 480w, https://www.beemoalex.net/p/%E6%89%93%E9%80%A0%E6%BC%82%E4%BA%AE-powershell-7-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83_%E4%BD%BF%E7%94%A8oh-my-posh/5_hufa7665bd0a8f25ea478ba4ba32843072_56241_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="5"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="430px"
+>&lt;/p>
+&lt;p>3.安裝 oh-my-posh&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-powershell" data-lang="powershell">&lt;span class="line">&lt;span class="cl">&lt;span class="n">winget&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">JanDeDobbeleer&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">OhMyPosh&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>修改一下PowerShell使用者配置檔，打開使用者配置檔案&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-powershell" data-lang="powershell">&lt;span class="line">&lt;span class="cl">&lt;span class="n">notepad&lt;/span> &lt;span class="nv">$PROFILE&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>如果你是打不開的代表沒文件，請創建使用者配置檔&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-powershell" data-lang="powershell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">New-Item&lt;/span> &lt;span class="n">-Path&lt;/span> &lt;span class="nv">$PROFILE&lt;/span> &lt;span class="n">-Type&lt;/span> &lt;span class="n">File&lt;/span> &lt;span class="n">-Force&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/blockquote>
+&lt;p>打開配置檔的記事本後，增加以下內容&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-powershell" data-lang="powershell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">oh-my&lt;/span>&lt;span class="n">-posh&lt;/span> &lt;span class="n">init&lt;/span> &lt;span class="n">pwsh&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="nb">Invoke-Expression&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>存檔後回到&lt;a class="link" href="https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=zh-tw&amp;amp;gl=TW" target="_blank" rel="noopener"
+>Windows Terminal&lt;/a> 讓他重新載入內容&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-powershell" data-lang="powershell">&lt;span class="line">&lt;span class="cl">&lt;span class="p">.&lt;/span> &lt;span class="nv">$PROFILE&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://www.beemoalex.net/p/%E6%89%93%E9%80%A0%E6%BC%82%E4%BA%AE-powershell-7-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83_%E4%BD%BF%E7%94%A8oh-my-posh/1.png"
+width="178"
+height="22"
+srcset="https://www.beemoalex.net/p/%E6%89%93%E9%80%A0%E6%BC%82%E4%BA%AE-powershell-7-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83_%E4%BD%BF%E7%94%A8oh-my-posh/1_hu2b3e8c5bbce1e49952eabf479c329537_993_480x0_resize_box_3.png 480w, https://www.beemoalex.net/p/%E6%89%93%E9%80%A0%E6%BC%82%E4%BA%AE-powershell-7-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83_%E4%BD%BF%E7%94%A8oh-my-posh/1_hu2b3e8c5bbce1e49952eabf479c329537_993_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="當看到前面這樣時別慌張，缺個字體而已"
+class="gallery-image"
+data-flex-grow="809"
+data-flex-basis="1941px"
+>&lt;/p>
+&lt;p>oh-my-posh輸入&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-powershell" data-lang="powershell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">oh-my&lt;/span>&lt;span class="n">-posh&lt;/span> &lt;span class="n">font&lt;/span> &lt;span class="n">install&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>跑出字體選單，選一個喜歡的就好，&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>&lt;a class="link" href="https://www.nerdfonts.com/font-downloads" target="_blank" rel="noopener"
+>Nerd Fonts - Iconic font aggregator, glyphs/icons collection, &amp;amp; fonts patcher&lt;/a>&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;blockquote>
+&lt;p>個人還是建議選Mono字體，等寬換行上才不會有多人協作換行問題&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://www.beemoalex.net/p/%E6%89%93%E9%80%A0%E6%BC%82%E4%BA%AE-powershell-7-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83_%E4%BD%BF%E7%94%A8oh-my-posh/2.png"
+width="360"
+height="270"
+srcset="https://www.beemoalex.net/p/%E6%89%93%E9%80%A0%E6%BC%82%E4%BA%AE-powershell-7-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83_%E4%BD%BF%E7%94%A8oh-my-posh/2_hu5df41ad31d54fb4c9f183586cc40293f_11665_480x0_resize_box_3.png 480w, https://www.beemoalex.net/p/%E6%89%93%E9%80%A0%E6%BC%82%E4%BA%AE-powershell-7-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83_%E4%BD%BF%E7%94%A8oh-my-posh/2_hu5df41ad31d54fb4c9f183586cc40293f_11665_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="Untitled"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+>&lt;/p>
+&lt;p>下載完成後請按下 &lt;code>CTRL + SHIFT + ,&lt;/code>&lt;/p>
+&lt;p>跳出編輯視窗尋找 &lt;code>profiles &amp;gt; list &amp;gt; name&lt;/code> 值為 PowerShell 7 的區塊，增加區塊&lt;/p>
+&lt;p>face 值就是你剛剛下載字體的區塊，像我就選粗體的&lt;code>AurulentSansMono&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;font&amp;#34;&lt;/span>&lt;span class="err">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;face&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;AurulentSansMono NF&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;span class="err">,&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>改好了就像這樣&lt;/p>
+&lt;p>&lt;img src="https://www.beemoalex.net/p/%E6%89%93%E9%80%A0%E6%BC%82%E4%BA%AE-powershell-7-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83_%E4%BD%BF%E7%94%A8oh-my-posh/3.png"
+width="915"
+height="257"
+srcset="https://www.beemoalex.net/p/%E6%89%93%E9%80%A0%E6%BC%82%E4%BA%AE-powershell-7-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83_%E4%BD%BF%E7%94%A8oh-my-posh/3_huc4a5937caf471ee888bc9e7946062d13_38980_480x0_resize_box_3.png 480w, https://www.beemoalex.net/p/%E6%89%93%E9%80%A0%E6%BC%82%E4%BA%AE-powershell-7-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83_%E4%BD%BF%E7%94%A8oh-my-posh/3_huc4a5937caf471ee888bc9e7946062d13_38980_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="3"
+class="gallery-image"
+data-flex-grow="356"
+data-flex-basis="854px"
+>&lt;/p>
+&lt;blockquote>
+&lt;p>為什麼不改 defaults ?
+改了之後 VS 底下的 終端機視窗符號無法顯示，建議改個指定來源就好&lt;/p>
+&lt;/blockquote>
+&lt;p>重新啟動 &lt;a class="link" href="https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=zh-tw&amp;amp;gl=TW" target="_blank" rel="noopener"
+>&lt;code>Windows Terminal&lt;/code>&lt;/a>&lt;/p>
+&lt;p>&lt;strong>完工&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://www.beemoalex.net/p/%E6%89%93%E9%80%A0%E6%BC%82%E4%BA%AE-powershell-7-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83_%E4%BD%BF%E7%94%A8oh-my-posh/4.png"
+width="1231"
+height="311"
+srcset="https://www.beemoalex.net/p/%E6%89%93%E9%80%A0%E6%BC%82%E4%BA%AE-powershell-7-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83_%E4%BD%BF%E7%94%A8oh-my-posh/4_huf9777074d93e10a1f8c2fe94f19963d2_27528_480x0_resize_box_3.png 480w, https://www.beemoalex.net/p/%E6%89%93%E9%80%A0%E6%BC%82%E4%BA%AE-powershell-7-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83_%E4%BD%BF%E7%94%A8oh-my-posh/4_huf9777074d93e10a1f8c2fe94f19963d2_27528_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="Untitled"
+class="gallery-image"
+data-flex-grow="395"
+data-flex-basis="949px"
+>&lt;/p>
+&lt;h2 id="額外補充">額外補充&lt;/h2>
+&lt;hr>
+&lt;h3 id="修改主題">修改主題&lt;/h3>
+&lt;p>如果真的嫌主題醜或是不實用可以上 &lt;a class="link" href="https://ohmyposh.dev/docs/themes" target="_blank" rel="noopener"
+>Themes | Oh My Posh&lt;/a> 看看喜歡的&lt;/p>
+&lt;p>打開配置文件 &lt;code>notepad $PROFILE&lt;/code> 第一行更新&lt;/p>
+&lt;p>修改以下 &lt;strong>&amp;quot;$env:POSH_THEMES_PATH{主題名稱}.omp.json&amp;quot;&lt;/strong>&lt;/p>
+&lt;p>範例:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="err">oh-my-posh&lt;/span> &lt;span class="err">init&lt;/span> &lt;span class="err">pwsh&lt;/span> &lt;span class="err">--config&lt;/span> &lt;span class="s2">&amp;#34;$env:POSH_THEMES_PATH\gruvbox.omp.json&amp;#34;&lt;/span> &lt;span class="err">|&lt;/span> &lt;span class="err">Invoke-Expression&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="posh-git-git補完插件">&lt;strong>&lt;strong>posh-git git補完插件&lt;/strong>&lt;/strong>&lt;/h3>
+&lt;p>既然都裝了這些常常忘記git怎麼下，自然也是裝起來，使用&lt;code>Install-Module&lt;/code> 功能下載安裝&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-powershell" data-lang="powershell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">Install-Module&lt;/span> &lt;span class="nb">posh-git&lt;/span> &lt;span class="n">-Scope&lt;/span> &lt;span class="n">CurrentUser&lt;/span> &lt;span class="n">-Force&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>完成後輸入依樣輸入 &lt;code>notepad $PROFILE&lt;/code> 打開配置檔案，加入最後一行存檔&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-powershell" data-lang="powershell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">Import-Module&lt;/span> &lt;span class="nb">posh-git&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>重新載入使用者配置檔，輸入&lt;code>. $PROFILE&lt;/code> 就能自動補上git指令了&lt;/p>
+&lt;h1 id="參考-感謝巨人們的肩膀-沒有你們就沒有這篇文章">參考 感謝巨人們的肩膀 沒有你們就沒有這篇文章&lt;/h1>
+&lt;hr>
+&lt;p>&lt;a class="link" href="https://blog.miniasp.com/post/2021/11/24/PowerShell-prompt-with-Oh-My-Posh-and-Windows-Terminal" target="_blank" rel="noopener"
+>如何打造一個華麗又實用的 PowerShell 命令輸入環境 | The Will Will Web (miniasp.com)&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/microsoft/terminal" target="_blank" rel="noopener"
+>microsoft/terminal: The new Windows Terminal and the original Windows console host, all in the same place! (github.com)&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.kwchang0831.dev/dev-env/pwsh/oh-my-posh#%E6%9B%B4%E6%94%B9-oh-my-posh-%E4%B8%BB%E9%A1%8C" target="_blank" rel="noopener"
+>安裝新版 Oh My Posh 與插件來美化 PowerShell | 成功他媽．阿瑋 (kwchang0831.dev)&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://ohmyposh.dev/docs/installation/prompt" target="_blank" rel="noopener"
+>Change your prompt | Oh My Posh&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/dahlbyk/posh-git" target="_blank" rel="noopener"
+>dahlbyk/posh-git： A PowerShell environment for Git (github.com)&lt;/a>&lt;/p></description></item></channel></rss>

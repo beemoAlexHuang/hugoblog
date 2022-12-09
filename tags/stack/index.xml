@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Stack on 隨堂測驗紙</title><link>https://www.beemoalex.net/tags/stack/</link><description>Recent content in Stack on 隨堂測驗紙</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Sun, 14 Aug 2022 01:00:00 +0200</lastBuildDate><atom:link href="https://www.beemoalex.net/tags/stack/index.xml" rel="self" type="application/rss+xml"/><item><title>框架與架構差別</title><link>https://www.beemoalex.net/p/%E6%A1%86%E6%9E%B6%E8%88%87%E6%9E%B6%E6%A7%8B%E5%B7%AE%E5%88%A5/</link><pubDate>Sun, 14 Aug 2022 01:00:00 +0200</pubDate><guid>https://www.beemoalex.net/p/%E6%A1%86%E6%9E%B6%E8%88%87%E6%9E%B6%E6%A7%8B%E5%B7%AE%E5%88%A5/</guid><description>&lt;img src="https://www.beemoalex.net/p/%E6%A1%86%E6%9E%B6%E8%88%87%E6%9E%B6%E6%A7%8B%E5%B7%AE%E5%88%A5/cover.jpg" alt="Featured image of post 框架與架構差別" />&lt;h1 id="軟體架構-software-architecture">&lt;strong>軟體架構 （Software Architecture）&lt;/strong>&lt;/h1>
+&lt;hr>
+&lt;p>&lt;img src="https://www.beemoalex.net/p/%E6%A1%86%E6%9E%B6%E8%88%87%E6%9E%B6%E6%A7%8B%E5%B7%AE%E5%88%A5/Untitled.png"
+width="625"
+height="439"
+srcset="https://www.beemoalex.net/p/%E6%A1%86%E6%9E%B6%E8%88%87%E6%9E%B6%E6%A7%8B%E5%B7%AE%E5%88%A5/Untitled_hubbe40d2f385fd10fa0cb08af0920d2e9_81164_480x0_resize_box_3.png 480w, https://www.beemoalex.net/p/%E6%A1%86%E6%9E%B6%E8%88%87%E6%9E%B6%E6%A7%8B%E5%B7%AE%E5%88%A5/Untitled_hubbe40d2f385fd10fa0cb08af0920d2e9_81164_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="Untitled"
+class="gallery-image"
+data-flex-grow="142"
+data-flex-basis="341px"
+>&lt;/p>
+&lt;p>&lt;strong>軟體架構（Software Architecture）是一種軟體的藍圖，它告訴你這個軟體的結構，功能，介面，用法，與其他系統的構連以及資料交換等等規範，但它並沒有叫你要用什麼方式實作&lt;/strong>&lt;/p>
+&lt;h1 id="軟體框架framework">軟體框架（Framework）&lt;/h1>
+&lt;hr>
+&lt;p>&lt;img src="https://www.beemoalex.net/p/%E6%A1%86%E6%9E%B6%E8%88%87%E6%9E%B6%E6%A7%8B%E5%B7%AE%E5%88%A5/Untitled2.png"
+width="587"
+height="344"
+srcset="https://www.beemoalex.net/p/%E6%A1%86%E6%9E%B6%E8%88%87%E6%9E%B6%E6%A7%8B%E5%B7%AE%E5%88%A5/Untitled2_huba6e4750abaea841be8f2289c8b5c985_102102_480x0_resize_box_3.png 480w, https://www.beemoalex.net/p/%E6%A1%86%E6%9E%B6%E8%88%87%E6%9E%B6%E6%A7%8B%E5%B7%AE%E5%88%A5/Untitled2_huba6e4750abaea841be8f2289c8b5c985_102102_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="Untitled"
+class="gallery-image"
+data-flex-grow="170"
+data-flex-basis="409px"
+>&lt;/p>
+&lt;p>&lt;strong>在一個既定的框架下可以做的工作&lt;/strong>，也就是說，&lt;strong>這是一個已經成形的方法，而且有程式碼實體&lt;/strong>
+（例如鋼構工法也是要有鋼材才能做）&lt;strong>，並且會告訴你要如何使用它&lt;/strong>（即 Framework Documentation，MSDN Library 即為一最佳例子）&lt;/p>
+&lt;h1 id="分析">分析&lt;/h1>
+&lt;hr>
+&lt;p>Framework 和 Architecture 經常被用來叫做架構，其實它們兩個本質上的差異是很大的，Framework 只會告訴你怎麼用，但不會告訴你怎麼實作出特定功能，而 Architecture 是告訴你某些功能的走向以及方針，但卻沒有程式碼給你，所以 Architecture 通常會需要 Framework 來實現，而 Framework 也需要 Architecture 才能發揮其所長。&lt;/p>
+&lt;h1 id="同理可證">同理可證&lt;/h1>
+&lt;hr>
+&lt;p>&lt;a class="link" href="http://1.Net" target="_blank" rel="noopener"
+>1. Net&lt;/a> Core 可說是一個開發框架嗎?&lt;/p>
+&lt;p>是&lt;/p>
+&lt;ol>
+&lt;li>WebForm 和 MVC 究竟是 框架 還是一種 架構模式&lt;/li>
+&lt;/ol>
+&lt;p>架構，因為架構能可以有不同框架來實現(EX: .net Core MVC 範本)&lt;/p>
+&lt;ol>
+&lt;li>架構跟框架是不是同一種東西?&lt;/li>
+&lt;/ol>
+&lt;p>不是，架構偏於規範，框架則有程式碼或是已有套件&lt;/p>
+&lt;h1 id="參考">參考&lt;/h1>
+&lt;hr>
+&lt;p>&lt;a class="link" href="https://coolmandiary.blogspot.com/2016/08/architecture-framework.html" target="_blank" rel="noopener"
+>Architecture(架構) 和 Framework(框架) 有何不同?_軟體設計前的事前規劃的藍圖概念 (coolmandiary.blogspot.com)&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://dotblogs.com.tw/regionbbs/2009/06/12/framework_vs_architecture" target="_blank" rel="noopener"
+>Framework 和 Architecture 有何不同? | 小朱® 的技術隨手寫 - 點部落 (dotblogs.com.tw)&lt;/a>&lt;/p></description></item></channel></rss>

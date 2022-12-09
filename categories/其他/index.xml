@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>其他 on 隨堂測驗紙</title><link>https://www.beemoalex.net/categories/%E5%85%B6%E4%BB%96/</link><description>Recent content in 其他 on 隨堂測驗紙</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Fri, 26 Aug 2022 01:00:00 +0200</lastBuildDate><atom:link href="https://www.beemoalex.net/categories/%E5%85%B6%E4%BB%96/index.xml" rel="self" type="application/rss+xml"/><item><title>寫部落格的開始</title><link>https://www.beemoalex.net/p/%E5%AF%AB%E9%83%A8%E8%90%BD%E6%A0%BC%E7%9A%84%E9%96%8B%E5%A7%8B/</link><pubDate>Fri, 26 Aug 2022 01:00:00 +0200</pubDate><guid>https://www.beemoalex.net/p/%E5%AF%AB%E9%83%A8%E8%90%BD%E6%A0%BC%E7%9A%84%E9%96%8B%E5%A7%8B/</guid><description>&lt;img src="https://www.beemoalex.net/p/%E5%AF%AB%E9%83%A8%E8%90%BD%E6%A0%BC%E7%9A%84%E9%96%8B%E5%A7%8B/cover.jpg" alt="Featured image of post 寫部落格的開始" />&lt;h1 id="一開始">一開始&lt;/h1>
+&lt;hr>
+&lt;p>買這個網域已經有了四年的時間，起初想要簡單寫個網誌，偶爾需要火力展示什麼的想著想著覺得應該方便許多，自己有個網域感覺多拉風阿。&lt;/p>
+&lt;p>&lt;img src="https://www.beemoalex.net/p/%E5%AF%AB%E9%83%A8%E8%90%BD%E6%A0%BC%E7%9A%84%E9%96%8B%E5%A7%8B/Untitled.png"
+width="536"
+height="177"
+srcset="https://www.beemoalex.net/p/%E5%AF%AB%E9%83%A8%E8%90%BD%E6%A0%BC%E7%9A%84%E9%96%8B%E5%A7%8B/Untitled_hu7f13bea53d9e9cf8e4f44a85c690f90a_11440_480x0_resize_box_3.png 480w, https://www.beemoalex.net/p/%E5%AF%AB%E9%83%A8%E8%90%BD%E6%A0%BC%E7%9A%84%E9%96%8B%E5%A7%8B/Untitled_hu7f13bea53d9e9cf8e4f44a85c690f90a_11440_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="Untitled"
+class="gallery-image"
+data-flex-grow="302"
+data-flex-basis="726px"
+>&lt;/p>
+&lt;h1 id="興致沖沖的開始">興致沖沖的開始&lt;/h1>
+&lt;hr>
+&lt;p>在GCP上租了主機，心想阿這就是網誌的開始，開始找資料查詢哪一個框架好，哪一個編輯器好寫。&lt;/p>
+&lt;blockquote>
+&lt;p>最後選定了 &lt;a class="link" href="https://hexo.io/zh-tw/" target="_blank" rel="noopener"
+>HEXO&lt;/a> 作為框架&lt;/p>
+&lt;/blockquote>
+&lt;p>網誌內容為了測試就打了建設中，像是要有甚麼偉大的建設一樣，圍上了施工布條。&lt;/p>
+&lt;p>&lt;img src="https://www.beemoalex.net/p/%E5%AF%AB%E9%83%A8%E8%90%BD%E6%A0%BC%E7%9A%84%E9%96%8B%E5%A7%8B/Untitled1.png"
+width="1365"
+height="804"
+srcset="https://www.beemoalex.net/p/%E5%AF%AB%E9%83%A8%E8%90%BD%E6%A0%BC%E7%9A%84%E9%96%8B%E5%A7%8B/Untitled1_hu892695f283cd54bd2697d0aa6cafe61d_1319963_480x0_resize_box_3.png 480w, https://www.beemoalex.net/p/%E5%AF%AB%E9%83%A8%E8%90%BD%E6%A0%BC%E7%9A%84%E9%96%8B%E5%A7%8B/Untitled1_hu892695f283cd54bd2697d0aa6cafe61d_1319963_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="Untitled"
+class="gallery-image"
+data-flex-grow="169"
+data-flex-basis="407px"
+>&lt;/p>
+&lt;h1 id="荒廢期">荒廢期&lt;/h1>
+&lt;hr>
+&lt;p>&lt;strong>然後呢？&lt;/strong>&lt;/p>
+&lt;p>然後？就沒有然後了。
+架設主機後就像是蠟燭燃燒殆盡一樣，腦袋每次動手都在想為何要寫？&lt;/p>
+&lt;blockquote>
+&lt;p>編輯文章並沒有編輯器好寫
+Server每次都要push文章重新生成，並沒有建構CI/CD
+覺得自己寫了沒人看，參考文章也是貼來貼去
+寫了被人批評被人笑怎麼辦&lt;/p>
+&lt;/blockquote>
+&lt;p>內心設想了無數的劇本。心裡想改天好了，何必這樣摧殘自己呢？上班都夠累了，就這樣過了一年。&lt;/p>
+&lt;p>某天機器通知被**&lt;a class="link" href="https://www.cloudflare.com/zh-tw/learning/ddos/syn-flood-ddos-attack/" target="_blank" rel="noopener"
+>DDoS 攻擊&lt;/a>，從**GCP轉至linode，又是搬阿搬拆阿拆，甚至還把建置流程寫了DockerFile方便又要搬移的作法。&lt;/p>
+&lt;p>就是不動鍵盤生出一篇文章。&lt;/p>
+&lt;p>雖然，從2020開始使用Notion寫了許多筆記，但始終沒有重新整理輸出到部落格上。&lt;/p>
+&lt;h1 id="火種">火種？&lt;/h1>
+&lt;hr>
+&lt;p>就這樣時間過了四年來到2022年，某天在FaceBook看到91寫到一篇 &lt;a class="link" href="https://tdd.best/blog/why-engineers-should-keep-blogging/" target="_blank" rel="noopener"
+>我為什麼鼓勵工程師寫 blog&lt;/a> 一文 引用了 &lt;a class="link" href="https://blog.codinghorror.com/how-to-achieve-ultimate-blog-success-in-one-easy-step/" target="_blank" rel="noopener"
+>How To Achieve Ultimate Blog Success In One Easy Step&lt;/a> 翻譯過來一段話：&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>挑個你自認為可以的時間行程安排，什麼時候開始寫 blog，預計多久寫一篇文，開始動工，並堅持下去。在你這麼做之前，任何建議對你來說都是不重要的&lt;/strong>。你文章是否寫得很糟糕不重要，是否沒有任何人會看你的 blog 不重要，是不是沒啥有趣的東西可以紀錄也不重要。重要的是，只要你能透過寫文來表現出寫作的意願，而且渴望持續地寫作，檢視、思考與改善自己的寫作，你終究會成功的。&lt;/p>
+&lt;/blockquote>
+&lt;p>看完這段話，我的確是想了太多。&lt;/p>
+&lt;h1 id="notion寫上去跟blog不一樣">Notion寫上去跟Blog不一樣?&lt;/h1>
+&lt;hr>
+&lt;p>當開始撰寫時，就想著應該只要把Notion的筆記給倒出來就好？&lt;/p>
+&lt;p>&lt;strong>就好了吧？&lt;/strong>&lt;/p>
+&lt;p>倒文章的當下發現了一堆即使我寫了也看不懂的文章反而占了一部分，步驟上也非常凌亂不堪。&lt;/p>
+&lt;p>事情看來沒有這麼簡單。於是在整理新的主題得時候，想著說不定會有人看了這邊文章操作，反而讓我更專注在有可能漏掉的地方，或是更注重步驟上的紀錄。&lt;/p>
+&lt;h1 id="寫在這裡就是要救未來的自己">寫在這裡就是要救未來的自己&lt;/h1>
+&lt;hr>
+&lt;h3 id="可能哪一天我要看或是哪一天有人要看">可能哪一天我要看或是哪一天有人要看？&lt;/h3>
+&lt;h3 id="雖然寫得很醜很爛又貼來貼去但寫下去就對了吧">雖然寫得很醜很爛又貼來貼去，但寫下去就對了吧&lt;/h3>
+&lt;p>大概是這樣的想法開始寫Blog的開始，就像這個Blog名稱一樣**&lt;a class="link" href="https://www.beemoalex.net/" target="_blank" rel="noopener"
+>隨堂測驗紙&lt;/a>**。&lt;/p>
+&lt;p>因為想要紀錄步驟，找一個好寫且便宜的地方放在那裏讓我好尋找，為了自己而寫。&lt;/p>
+&lt;h1 id="參考-感謝巨人們的肩膀-沒有你們就沒有這篇文章">參考 感謝巨人們的肩膀 沒有你們就沒有這篇文章&lt;/h1>
+&lt;hr>
+&lt;p>&lt;a class="link" href="https://pinchlime.com/2020/03/07/why-should-we-keep-blogging/" target="_blank" rel="noopener"
+>好文推薦——《我為什麼鼓勵工程師寫blog》 - Pin 起來！ (pinchlime.com)&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://tdd.best/blog/why-engineers-should-keep-blogging/" target="_blank" rel="noopener"
+>我為什麼鼓勵工程師寫 blog - 最好的 TDD 學習資源&lt;/a>&lt;/p></description></item></channel></rss>
